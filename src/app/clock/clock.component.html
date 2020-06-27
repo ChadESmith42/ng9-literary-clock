@@ -1,0 +1,18 @@
+<main>
+  <section class="time">
+    {{ time | async }}
+  </section>
+  <section>
+    <article class="quote green">
+      <p> {{ quote?.quote }}</p>
+    </article>
+  </section>
+  <section class="purple">
+    <article class="source">
+      {{ quote?.source}}
+    </article>
+    <article class="author">
+      {{ quote?.author}}
+    </article>
+  </section>
+</main>
