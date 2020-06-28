@@ -34,7 +34,7 @@ section {
 .time {
   margin: 0 auto;
   text-align: center;
-  width: 80%;
+  width: calc(100% - 40px);
   font-size: 3rem;
   font-weight: 700;
 }
@@ -58,7 +58,49 @@ section {
 footer {
   font-size: 1.75rem;
   margin: 0 auto;
-  position: absolute;
+  padding: 8px 8px 4px 8px;
+  position: fixed;
   bottom: 40px;
-  left: 240px;
+  left: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .water-lilies {
+    background-image: url(../src/app/clock/water-lilies.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  section {
+    width: calc(100% - 24px);
+    margin: 0;
+    padding: 4px 8px;
+  }
+
+  .time {
+    font-size: 1.5rem;
+    /* width: calc(100% - 40px); */
+    padding: 8px 4px;
+    background-color: rgba(88, 127, 97, 0.4);
+    border-radius: 16px;
+  }
+
+  .quote {
+    padding: 4px;
+    font-size: 1.25rem;
+    /* width: calc(100% - 40px); */
+  }
+
+  .source, .author {
+    /* width: calc(100% - 40px); */
+    padding: 4px;
+    font-size: 1rem;
+  }
+
+  footer {
+    font-size: 1rem;
+  }
 }
